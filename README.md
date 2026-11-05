@@ -51,3 +51,11 @@ The StagePass smart contract allows users to:
 ## Project Disclaimer
 
 STAGEPASS is an unofficial educational demonstration project. It is not affiliated with BTS, PondPhuwin, or their respective agencies. All events and tickets are fictional. No real tickets are sold.
+Testing Status
+Smart contract compiled successfully using Solidity 0.8.20.
+Contract deployed and tested using Remix VM.
+Event creation tested successfully.
+Ticket booking tested successfully.
+Ticket count and ownership records verified.
+Frontend deployed through Netlify.
+Sepolia deployment and Blockscout verification are pending.
