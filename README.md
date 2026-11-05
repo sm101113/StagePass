@@ -1,16 +1,53 @@
-# React + Vite
+# STAGEPASS 🎟️
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+### Your Concert. Your Ticket. Your Blockchain.
 
-Currently, two official plugins are available:
+STAGEPASS is a blockchain-based concert ticketing demo built as an educational project. It demonstrates how smart contracts can be used to create events and record ticket bookings on the blockchain.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Concert event display
+- ARMY PASS and PPW PASS themed sections
+- MetaMask wallet connection
+- Smart contract integration
+- Event details retrieval
+- Blockchain-based ticket booking
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the Oxlint configuration
+- React.js
+- Vite
+- Tailwind CSS
+- Solidity
+- Remix IDE
+- MetaMask
+- ethers.js
+- Sepolia Test Network
+- Blockscout
+- GitHub
+- Netlify
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Smart Contract
+
+The StagePass smart contract allows users to:
+- Create concert events
+- Set ticket prices and ticket limits
+- Book tickets
+- View event details
+- Track tickets sold
+
+## Installation and Setup
+
+1. Clone this repository.
+2. Open the project folder.
+3. Install dependencies:
+
+   `npm install`
+
+4. Start the development server:
+
+   `npm run dev`
+
+## Project Disclaimer
+
+STAGEPASS is an unofficial educational demonstration project. It is not affiliated with BTS, PondPhuwin, or their respective agencies. All events and tickets are fictional. No real tickets are sold.
