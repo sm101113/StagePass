@@ -1,0 +1,417 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #ffffff;
+  background: #090910;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #090910;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.app {
+  width: 100%;
+  overflow: hidden;
+}
+
+.navbar {
+  height: 82px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #252532;
+  background: #0c0c14;
+}
+
+.logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.logo span {
+  color: #a78bfa;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  color: #aaa9bb;
+  font-size: 13px;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+.wallet-btn {
+  padding: 12px 20px;
+  border: 1px solid #9b7af6;
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+  font-weight: 600;
+}
+
+.wallet-btn:hover {
+  background: #7652d8;
+}
+
+.hero {
+  min-height: 570px;
+  padding: 105px 12%;
+  background:
+    radial-gradient(ellipse at 80% 45%, #30205b 0%, transparent 38%),
+    radial-gradient(ellipse at 15% 100%, #18122e 0%, transparent 42%),
+    #0c0c14;
+}
+
+.eyebrow {
+  color: #a78bfa;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  margin: 25px 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(42px, 7vw, 78px);
+  line-height: 1.05;
+  letter-spacing: -4px;
+}
+
+.hero h1 span {
+  color: #a78bfa;
+}
+
+.hero-text {
+  max-width: 490px;
+  color: #aaa9bb;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.explore-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 23px;
+  border-radius: 7px;
+  background: #8b65ed;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.explore-btn:hover {
+  background: #a78bfa;
+}
+
+.explore-btn span {
+  margin-left: 15px;
+}
+
+.hero-note {
+  margin-top: 38px;
+  color: #8d8c9e;
+  font-size: 12px;
+}
+
+.live-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 9px;
+  border-radius: 50%;
+  background: #a78bfa;
+}
+
+.events-section,
+.demo-events {
+  padding: 85px 8%;
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.section-heading h2,
+.demo-events h2 {
+  margin: 12px 0 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 38px;
+}
+
+.section-heading h2 span,
+.demo-events h2 span {
+  color: #a78bfa;
+}
+
+.section-description {
+  color: #9998a9;
+  font-size: 13px;
+}
+
+.pass-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.pass-card {
+  min-height: 390px;
+  padding: 28px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.pass-card:hover {
+  transform: translateY(-5px);
+}
+
+.army-card {
+  background:
+    radial-gradient(circle at 85% 20%, #8056d8 0%, transparent 38%),
+    linear-gradient(135deg, #27154b, #120f23);
+  border: 1px solid #6645a3;
+}
+
+.ppw-card {
+  background:
+    radial-gradient(circle at 85% 20%, #d58dba 0%, transparent 38%),
+    linear-gradient(135deg, #3c2544, #171322);
+  border: 1px solid #9d628c;
+}
+
+.card-top,
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-label,
+.card-footer {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #e2d5ff;
+}
+
+.card-symbol {
+  font-size: 30px;
+}
+
+.card-content {
+  max-width: 350px;
+}
+
+.card-subtitle {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #d9c4ff;
+}
+
+.card-content h3 {
+  margin: 12px 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 58px;
+  line-height: 0.95;
+}
+
+.card-content p:not(.card-subtitle) {
+  color: #ded5e9;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.card-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 16px;
+  border: 1px solid #ffffff88;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.card-btn:hover {
+  background: #ffffff20;
+}
+
+.demo-events {
+  background: #0e0e18;
+}
+
+.event-list {
+  margin-top: 35px;
+  border-top: 1px solid #30303c;
+}
+
+.event-item {
+  padding: 25px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #30303c;
+}
+
+.event-type {
+  color: #a78bfa;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.event-item h3 {
+  margin: 8px 0;
+  font-size: 21px;
+}
+
+.event-item p {
+  margin: 0;
+  color: #9291a2;
+  font-size: 12px;
+}
+
+.event-tag {
+  padding: 8px 12px;
+  border: 1px solid #615080;
+  border-radius: 20px;
+  color: #c6b3ff;
+  font-size: 10px;
+}
+
+.blockchain-note {
+  margin: 65px 8%;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  border: 1px solid #343044;
+  border-radius: 12px;
+  background: #14121e;
+}
+
+.note-icon {
+  color: #a78bfa;
+  font-size: 38px;
+}
+
+.blockchain-note h3 {
+  margin: 0 0 8px;
+}
+
+.blockchain-note p {
+  margin: 0;
+  color: #a5a3b2;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.notice {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  max-width: 350px;
+  padding: 16px;
+  border: 1px solid #8b65ed;
+  border-radius: 9px;
+  background: #211936;
+  color: white;
+  font-size: 13px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.notice button {
+  border: 0;
+  background: transparent;
+  color: white;
+  font-size: 22px;
+}
+
+footer {
+  padding: 35px 8%;
+  border-top: 1px solid #252532;
+  text-align: center;
+  color: #8d8c9e;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+footer .logo {
+  display: inline-block;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    padding: 80px 7%;
+  }
+
+  .hero h1 {
+    letter-spacing: -2px;
+  }
+
+  .events-section,
+  .demo-events {
+    padding: 60px 6%;
+  }
+
+  .section-heading {
+    display: block;
+  }
+
+  .pass-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pass-card {
+    min-height: 350px;
+  }
+
+  .event-item {
+    gap: 15px;
+  }
+
+  .blockchain-note {
+    margin: 40px 6%;
+  }
+}
